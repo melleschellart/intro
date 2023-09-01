@@ -59,38 +59,39 @@
               </div>
           </li>
           </ul>
+</nav>
+          <div class="scrollable-div">
+        <?php
+        $host = "localhost";
+        $username = "melle";
+        $password = "glrwachtwoordiskut";
+        $database = "projecten_intro";
 
-          <?php
-    $host = "localhost";
-    $username = "melle";
-    $password = "glrwachtwoordiskut";
-    $database = "projecten_intro";
+        $conn = new mysqli($host, $username, $password, $database);
 
-    $conn = new mysqli($host, $username, $password, $database);
-
-    if ($conn->connect_error) {
-        die("Connection failed: " . $conn->connect_error);
-    }
-
-    $query = "SELECT * FROM Projecten";
-    $result = $conn->query($query);
-
-    if ($result->num_rows > 0) {
-        echo "<h2>Projects:</h2>";
-        while ($row = $result->fetch_assoc()) {
-            echo "<div>";
-            echo "<h3>" . $row['titel'] . "</h3>";
-            echo "<p>Date: " . $row['datum'] . "</p>";
-            echo "<p>Description: " . $row['uitleg'] . "</p>";
-            echo "<img src='data:image/jpeg;base64," . base64_encode($row['foto']) . "' width='200' height='200'>";
-            echo "</div>";
+        if ($conn->connect_error) {
+            die("Connection failed: " . $conn->connect_error);
         }
-    } else {
-        echo "No projects found";
-    }
 
-    $conn->close();
-    ?>
+        $query = "SELECT * FROM Projecten";
+        $result = $conn->query($query);
+
+        if ($result->num_rows > 0) {
+            echo "<h2>Projects:</h2>";
+            while ($row = $result->fetch_assoc()) {
+                echo "<div>";
+                echo "<h2>" . $row['titel'] . "</h2>";
+                echo "<p>Date: " . $row['datum'] . "</p>";
+                echo "<h3>Description:</h3> <br> <p1>" . $row['uitleg'] . "</p1>";
+				echo "<img class='project-image' src='data:image/jpeg;base64," . base64_encode($row['foto']) . "' width='640' height='360'>";               echo "<br clear='both'>"; 
+            }
+        } else {
+            echo "No projects found";
+        }
+
+        $conn->close();
+        ?>
+    </div>
           
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>

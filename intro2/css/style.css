@@ -128,3 +128,25 @@
 #contact{
     text-align: center;
 }
+
+#white{
+	color: white;
+}
+
+.scrollable-div {
+    height: 90svh;
+    overflow-y: auto;
+	color: white;
+	width: auto;
+}
+.project-image {
+            float: right;
+        }
+
+.project-div {
+    margin-bottom: 50px;
+}
+
+.scrollable-div::-webkit-scrollbar {
+	display: none;
+}
