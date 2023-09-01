@@ -1,5 +1,6 @@
 
 #nav{
+    width: auto;
     border-radius: 0px;
     background-color: transparent !important;
 }
@@ -46,7 +47,6 @@
 
  #item0text{
     margin-left: 10svw;
-    margin-top: 5svh;
     width: 30svw;
  }
  #item1 {
@@ -96,3 +96,35 @@
  #shit{
     background-color: transparent;
  }
+
+ .id{
+    color: white !important;
+    background-color: white !important;
+ }
+
+ .dropdown-menu label,
+.dropdown-menu input,
+.dropdown-menu textarea,
+.dropdown-menu {
+    color: rgb(0, 0, 0) !important;
+}
+
+#background{
+    background-color: rgb(255, 255, 255);
+}
+
+
+.project-card {
+    border: 1px solid #ccc;
+    padding: 16px;
+    margin: 16px 0;
+}
+
+#item0,#item1,#item2,#item3{
+    color: white;
+    margin-top: 5svh;
+}
+
+#contact{
+    text-align: center;
+}

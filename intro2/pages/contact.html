@@ -18,36 +18,62 @@
   <div id='stars3'></div>
   
 
-    <nav class="navbar navbar-expand-sm navbar-dark bg-dark" aria-label="Third navbar example" id="nav">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">Mijn Portofolio</a>
-          <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample03" aria-controls="navbarsExample03" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-    
-          <div class="navbar-collapse collapse" id="navbarsExample03" >
-            <ul class="navbar-nav me-auto mb-2 mb-sm-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="../root/root.html">H0me</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="../pages/aboutme.html">About me</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="../pages/projecten.html">Projects</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" id="current" href="../pages/contact.html">Contact</a>
-              </li>
-            </ul>
-            
-          </div>
-        </div>
-      </nav>
+  <nav class="navbar navbar-expand-sm navbar-dark bg-dark" aria-label="Third navbar example" id="nav">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="">Mijn Portofolio</a>
+      <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample03" aria-controls="navbarsExample03" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="navbar-collapse collapse" id="navbarsExample03" >
+        <ul class="navbar-nav me-auto mb-2 mb-sm-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="../root/root.html">H0me</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="../pages/aboutme.html">About me</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="../pages/projecten.php">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" id="current" href="../pages/contact.html">Contact</a>
+          </li>
+          
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="dropdownForm" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Add Project
+            </a>
+            <div id="shit" class="dropdown-menu p-4" aria-labelledby="dropdownForm">
+                <form  id="background"  action="add_project.php" method="post" enctype="multipart/form-data" id="form">
+                    <label for="title"> <div id="labeltext"> Title:</div></label>
+                    <input class="pr" type="text" name="title" required><br><br>
+                    <label for="date"> <div class="label"> Date:</div></label>
+                    <input class="pr" type="date" name="date" required><br><br>
+                    <label for="description"> <div class="label">Description:</div></label>
+                    <textarea class="pr" name="description" rows="4" cols="50" required></textarea><br><br>
+                    <label for="image"> <div class="label">Image:</div></label>
+                    <input class="pr" type="file" name="image" accept="image/*" required><br><br>
+                    <label for="password"> <div class="label">Password:</div></label>
+                    <input class="pr" type="password" name="password" required><br><br>
+                    <input class="pr" type="submit" value="Add Project">
+                </form>
+            </div>
+        </li>
+        </ul>
+        
+      </div>
+    </div>
+  </nav>
     
     <div id="contact">
-      <h1>contact</h1>
-      
+      <h1>Contact</h1>
+      <p1 id="contact" ></p1>
+      Email: mmschellart@gmail.com <br>
+      Phone: 06 12345678 <br>
+      Website: https://89682.stu.sd-lab.nl/intro2/root/root.html
+
       
 
     </div>

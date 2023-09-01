@@ -23,14 +23,12 @@
 
   <nav class="navbar navbar-expand-sm navbar-dark bg-dark" aria-label="Third navbar example" id="nav">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">Mijn Portofolio</a>
-      <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
-        data-bs-target="#navbarsExample03" aria-controls="navbarsExample03" aria-expanded="false"
-        aria-label="Toggle navigation">
+      <a class="navbar-brand" href="">Mijn Portofolio</a>
+      <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample03" aria-controls="navbarsExample03" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
 
-      <div class="navbar-collapse collapse" id="navbarsExample03">
+      <div class="navbar-collapse collapse" id="navbarsExample03" >
         <ul class="navbar-nav me-auto mb-2 mb-sm-0">
           <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="../root/root.html">H0me</a>
@@ -39,13 +37,35 @@
             <a class="nav-link active" aria-current="page" id="current" href="../pages/aboutme.html">About me</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="../pages/projecten.html">Projects</a>
+            <a class="nav-link active" aria-current="page" href="../pages/projecten.php">Projects</a>
           </li>
           <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="../pages/contact.html">Contact</a>
           </li>
-        </ul>
+          
 
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="dropdownForm" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Add Project
+            </a>
+            <div id="shit" class="dropdown-menu p-4" aria-labelledby="dropdownForm">
+                <form  id="background"  action="add_project.php" method="post" enctype="multipart/form-data" id="form">
+                    <label for="title"> <div id="labeltext"> Title:</div></label>
+                    <input class="pr" type="text" name="title" required><br><br>
+                    <label for="date"> <div class="label"> Date:</div></label>
+                    <input class="pr" type="date" name="date" required><br><br>
+                    <label for="description"> <div class="label">Description:</div></label>
+                    <textarea class="pr" name="description" rows="4" cols="50" required></textarea><br><br>
+                    <label for="image"> <div class="label">Image:</div></label>
+                    <input class="pr" type="file" name="image" accept="image/*" required><br><br>
+                    <label for="password"> <div class="label">Password:</div></label>
+                    <input class="pr" type="password" name="password" required><br><br>
+                    <input class="pr" type="submit" value="Add Project">
+                </form>
+            </div>
+        </li>
+        </ul>
+        
       </div>
     </div>
   </nav>
@@ -54,13 +74,35 @@
     <div id="item0">
 
       <div id="item0text">
-        <h2>Wie ben ik</h2>
+        <h1>Wie ben ik</h1>
         <p1>Ik ben Melle Schellart en ik ben 17 jaar oud, Ik woon samen met mijn ouders en zusjes in delft. Ik vind games maken en games spelen
           , Ik vind het ook erg leuk om fysiek met techniek bezig te zijn bvb pc bouwen en laptops repareren.  
-        </p1>
+        </p1><br><br>
+        <p2>
+          <h2>Educatie</h2>
+          Ik MAVO afgerond op het christelijk lyceum delft, nu doe ik software development op get grl, met de minor XR. Ik ben van plan om door te studeren en na mijn MBo HBO te gaan doen, ik weet nog niet wat ik wil gaan studeren. 
+        </p2><br><br>
+        <h2>Persoonlijkheid</h2>
+        <p3>Ik zou mijn eigen persoonlijkheid omschrijvern als enthousiast, helpend, gezellig maar ook vergeet achtig. Ik ben in het eind van mijn eerste jaar havo gediagnosticeerd met dyslexie en ADHD type 2, Dit komt er op neer dat ik soms spellings fouten maak in het nederlands en soms dingen erg snel vergeet. Verdeer ben ik iemand die erg graag in een gezellige omgeving werk maar een plek waar ik me ook kan concentreren als dat nodig is</p3>
       </div>
     </div>
     <div id="item1">
+      <div>
+        <h1>Ervaringen:</h1>
+        <h4>Zomer 2021-Zomer 2023</h4>
+        <p1>Ik heb 2 jaar als keukenhulp bij een cafe gewerkt. <br>
+        ik ben hier weg gegaan omdat er veel nieuwe mensen kwamen werken en die niet echt gezellig waren, <br>
+        dit was wel belangrijk want je staat soms tot 10 uur achterelkaar met elkaar in een redelijk kleine ruimte.
+      </p1><br><br><br>
+      <h4>Zomervakantie 2023</h4>
+      <p2>In de zomervakantie van 2023 heb ik vrijwillegers werk gedaan voor het Mercurius college in Delft.<br>
+      Ze waren een nieuwe school aan het openen en toen heb ik samen met mijn vader geholpen met de <br>
+      IT systeemen in plaats brengen. </p2><br><br><br>
+      <h4>Zomervakantie 2023-Heden</h4>
+      <p3>Ik werk op het moment bij de BCC in delft. Ik verkoop daar producten en help mensen vinden wat ze nodig hebben. <br>
+      Ik vind het erg leuk werk omdat ik met techniek bezig ben en ook mensen kan helpen.</p3>
+      
+      </div>
 
     </div>
     <div id="item2">
