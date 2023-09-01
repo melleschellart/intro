@@ -79,3 +79,20 @@
     grid-column-end: 5;
     
  }
+ 
+
+ #form{
+    position: absolute;
+    margin-left: 10svw;
+ }
+
+
+ #contact{
+    color: white;
+    text-align: center;
+    margin-top: 10svh;
+ }
+ 
+ #shit{
+    background-color: transparent;
+ }
