@@ -1,0 +1,81 @@
+
+#nav{
+    border-radius: 0px;
+    background-color: transparent !important;
+}
+#current{   
+    background-color: tomato;
+    border-radius: 30%;
+}
+.Welcome{
+    color: #ffffff;
+    text-align: center;
+}
+.text{
+    margin-top: 28svh;
+}
+.info{
+    color: #ffffff;
+    text-align: center;
+}
+
+.grid {
+    display: grid; 
+ 
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    
+    gap: 0px;
+    height: 100%;
+    
+    
+ }
+   
+ #item0 {
+ 
+    background-color: transparent; 
+    grid-row-start: 1;
+    grid-column-start: 1;
+ 
+    grid-row-end: 4;
+    grid-column-end: 3;
+    color: white;
+    
+    
+ }
+
+ #item0text{
+    margin-left: 10svw;
+    margin-top: 5svh;
+    width: 30svw;
+ }
+ #item1 {
+ 
+    background-color: transparent; 
+    grid-row-start: 1;
+    grid-column-start: 3;
+ 
+    grid-row-end: 2;
+    grid-column-end: 5;
+    
+ }
+ #item2 {
+ 
+    background-color: transparent; 
+    grid-row-start: 2;
+    grid-column-start: 3;
+ 
+    grid-row-end: 3;
+    grid-column-end: 5;
+    
+ }
+ #item3 {
+ 
+    background-color: transparent; 
+    grid-row-start: 3;
+    grid-column-start: 3;
+ 
+    grid-row-end: 4;
+    grid-column-end: 5;
+    
+ }
