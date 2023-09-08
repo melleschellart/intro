@@ -1,16 +1,22 @@
 // We pakken het canvas element en de 2D context
-let canvas = document.getElementById('Canvasstar');
+let canvas = document.getElementById('Canvas');
 let draw = canvas.getContext('2d');
 
 // We stellen de grootte van het canvas in
-canvas.width = window.innerWidth;
-canvas.height = window.innerHeight + 200;
+canvas.width = screen.width;
+canvas.height = screen.height + 100;
 
+function reportWindowSize() {
+  heightOutput.textContent = window.innerHeight;
+  widthOutput.textContent = window.innerWidth;
+}
+
+window.onresize = reportWindowSize;
 // We maken een array om onze sterren in op te slaan
 let starField = [];
 for (let teller = 0; teller < 1000; teller++) {
   let x = Math.random() * canvas.width;
-  let y = Math.random() * canvas.height - 100; // Laat sterren ook net buiten het zicht starten
+  let y = Math.random() * canvas.height - 50; // Laat sterren ook net buiten het zicht starten
   let starSize = Math.random() * 5;
   let speed = 1 / starSize;
   let Opacity = Math.random();

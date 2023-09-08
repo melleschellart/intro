@@ -13,7 +13,12 @@
     text-align: center;
 }
 .text{
+    margin: auto;
+    width: 60%;
     margin-top: 28svh;
+    float: right;
+    margin-right: 7svw;
+
 }
 .info{
     color: #ffffff;
@@ -127,6 +132,8 @@
 
 #contact{
     text-align: center;
+    align-items: center;
+    align-self: center;
 }
 
 #white{
@@ -149,4 +156,50 @@
 
 .scrollable-div::-webkit-scrollbar {
 	display: none;
+}
+
+#text{
+    float: left;
+    max-width: 10px;
+}
+
+.star {
+    position: absolute;
+    width: px;
+    height: px;
+    background-color: white;
+    border-radius: 50%   ;
+    /* Add other styles as needed */
+}
+
+canvas{
+    position: absolute !important;
+    overflow: hidden;
+    background: radial-gradient(ellipse at bottom, #260731 0%, #040448 100%);
+    top: 0;
+    float: left;
+    left: 0;
+    z-index: -1;
+
+}
+
+body {
+    overflow: hidden;
+  }
+
+#portret{
+    max-width: 30svw;
+    margin-top: 160px;
+    margin-left: 3svw;
+    max-height: 500px;
+    height: auto;
+}
+
+#cv{
+    background-color: gray;
+    border: solid 1px black;
+    border-radius: 14%;
+    color: white;
+    text-decoration: none;
+    
 }

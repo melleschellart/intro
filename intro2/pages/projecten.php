@@ -8,12 +8,9 @@
     
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/starsv1.css">
 </head>
 <body>
-    <div id='stars'></div>
-    <div id='stars2'></div>
-    <div id='stars3'></div>
+
 
     <nav class="navbar navbar-expand-sm navbar-dark bg-dark" id="nav">
       <div class="container-fluid">
@@ -34,7 +31,7 @@
               <a class="nav-link active" aria-current="page" id="current" href="../pages/projecten.php">Projects</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="../pages/contact.html">Contact</a>
+              <a class="nav-link active" aria-current="page" href="../pages/contact.php">Contact</a>
             </li>
             
 
@@ -80,10 +77,12 @@
             echo "<h2>Projects:</h2>";
             while ($row = $result->fetch_assoc()) {
                 echo "<div>";
-                echo "<h2>" . $row['titel'] . "</h2>";
+                echo "<h2>" . $row['titel'] .  "<br></h2>";
                 echo "<p>Date: " . $row['datum'] . "</p>";
                 echo "<h3>Description:</h3> <br> <p1>" . $row['uitleg'] . "</p1>";
 				echo "<img class='project-image' src='data:image/jpeg;base64," . base64_encode($row['foto']) . "' width='640' height='360'>";               echo "<br clear='both'>"; 
+				echo "<a href='edit_project.php?id=" . $row['id'] . "'>Edit</a>"; 
+        echo "<a href='delete_project.php?id=" . $row['id'] . "'>Delete</a>";
             }
         } else {
             echo "No projects found";
@@ -93,8 +92,8 @@
         ?>
     </div>
           
-
+    <canvas id="Canvas"></canvas>
+    <script src="../js/stars.js"> </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-    <script src="../js/starflicker.js"></script>
 </body>
 </html>
